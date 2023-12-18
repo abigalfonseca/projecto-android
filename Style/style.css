@@ -170,7 +170,7 @@ footer {
 }
 
 div.video {
-    background-color: var(white);
+    background-color: var(--cor4);
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 59%;
@@ -184,6 +184,7 @@ div.video > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
+    
     
 }
 
