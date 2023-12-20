@@ -135,7 +135,7 @@ main h2 {
     font-weight: normal;
 }
 
-main img {
+main img#imagem {
     width: 100%;
 }
 
@@ -200,12 +200,22 @@ aside {
     box-shadow: 3px 3px 8px 0px #0000004d;
 }
 
-aside > ul {
-    list-style-type: '\2714\00A0\00A0';
+aside > ul#ul {
+    list-style-type: '\2714\00A0\00A';
     list-style-position: inside;
     columns: 2;
     font-size: 1em;
 }
+
+aside > ul {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    list-style-type: none;
+    list-style-position: inside;
+    columns: 1;
+    font-size: 1em;
+}
+
 
 aside > h3 {
     background-color: var(--cor4);
@@ -220,6 +230,17 @@ aside > h3 {
 aside p > a {
     background-color: var(--cor1);
 
+}
+
+aside  a.ul {
+    background-color: var(--cor1);
+    color: #545a11;
+    padding: 3.5px;
+    border-radius: 5px;
+}
+
+aside a.ul:hover {
+    color: var(--cor5);
 }
 
 
