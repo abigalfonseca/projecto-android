@@ -160,6 +160,13 @@ main strong {
     color: var(--cor4);
 }
 
+article > ul {
+            list-style-type: '\2714\00A0\00A0';
+            list-style-position: inside;
+            columns: 1;
+            
+}
+
 footer {
     background-color: var(--cor5);
     color: white;
@@ -199,6 +206,7 @@ aside > ul {
     list-style-type: '\2714\00A0\00A0';
     list-style-position: inside;
     columns: 2;
+    font-size: 3vw;
 }
 
 aside > h3 {
