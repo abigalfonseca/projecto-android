@@ -172,11 +172,25 @@ article > ul {
 
 footer {
     background-color: var(--cor5);
-    color: white;
     text-align: center;
-    font-style: italic;
     font-size: 0.8em;
     padding: 5px;
+}
+
+footer a {
+    padding: 0 5px;
+    font-size: 20px;
+    transition-duration: 2s;
+}
+
+footer a i {
+    color: var(--cor0);
+}
+
+footer a:hover {
+    color: var(--cor3);
+    transform: scale(1.05s);
+    
 }
 
 div.video {
@@ -248,20 +262,6 @@ aside a.ul:hover {
     color: var(--cor5);
 }
 
-
-
-footer p > a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: var(--cor1);
-    transition-duration: 2s;
-}
-
 section{
     display: flex;
     align-items: center;
@@ -277,7 +277,7 @@ section{
 form{
     background-color: #fff;
     max-width: 300px;
-    height: 260px;
+    height: 280px;
     padding: 40px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -297,7 +297,8 @@ form{
     bottom: 5px;
     transition: all 0.3s;
     cursor: text;
-    font-size: 15px;
+    font-size: 14px;
+    font-family: var(--fonte-android);
     color: var(--cor4);
 }
 
@@ -313,7 +314,8 @@ form{
 form .input-simples .input:focus ~ label,
 form .input-simples .input:valid ~ label{
     transform: translateY(-24px);
-    font-size: 12px;
+    font-size: 11px;
+    font-family: var(--fonte-android);
     color: var(--cor2);
 }
 
@@ -323,12 +325,34 @@ form .input-simples .input:valid ~ label{
 }
 
 form input[type=submit]{
+    text-align: center;
     padding: 10px 40px;
     border: none;
     border-radius: 10px;
     background-color: var(--cor3);
+    font-family: var(--fonte-android);
     color: #fff;
     cursor: pointer;
+}
+
+div ul.icone {
+    list-style-type: none;
+    padding: 20px;
+}
+
+div ul.icone li {
+    padding: 10px;
+}
+
+div ul.icone li a {
+    background-color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+div ul.icone li i{
+    font-size: 22px;
+    color: var(--cor5);
 }
 
 
@@ -337,6 +361,14 @@ form input[type=submit]{
     aside > ul#ul {
         columns: 1;
         font-size: 17px;
-        
+    }
+
+    main h3.sem {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .input-simples label {
+        font-size: 12px;
     }
 }
