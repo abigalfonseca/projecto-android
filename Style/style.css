@@ -355,8 +355,58 @@ div ul.icone li i{
     color: var(--cor5);
 }
 
+/*MENSAGEM DE COOKIES*/
 
-@media screen and (max-width: 400px){
+.cookies-sms {
+    width: 75%;
+    background-color: var(--cor0);
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.329);
+    display: none;
+}
+
+.cookies-sms.mostrar {
+    display: block;
+}
+
+.cookies-sms .cookies-texto {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+.cookies-sms .cookies-btn {
+    margin-left: 30px;
+}
+
+.cookies-sms .cookies-btn button {
+    background-color: var(--cor4);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--fonte-android);
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 35px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.cookies-sms .cookies-btn button:hover {
+    box-shadow: 0 0 8px var(--cor4);
+    transform: scale(0.9);
+}
+
+
+@media screen and (max-width: 1020px){
+
+    nav {
+        text-align: center;
+    }
 
     aside > ul#ul {
         columns: 1;
@@ -370,5 +420,19 @@ div ul.icone li i{
 
     .input-simples label {
         font-size: 12px;
+    }
+
+    .cookies-sms {
+        
+        height: 240px;
+        width: 95%;
+        border-radius: 25px;
+        box-shadow: 0 0 20px #ffffff50;
+    }
+
+    .cookies-sms .cookies-texto {
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
     }
 }
