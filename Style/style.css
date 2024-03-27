@@ -163,6 +163,10 @@ main strong {
     color: var(--cor4);
 }
 
+picture img{
+    border-radius: 10px;
+}
+
 article > ul {
             list-style-type: '\2714\00A0\00A0';
             list-style-position: inside;
@@ -197,6 +201,7 @@ div.video {
     background-color: var(--cor4);
     margin: 0px -20px 30px -20px;
     padding: 20px;
+    border-radius: 10px;
     padding-bottom: 59%;
     position: relative;
 
@@ -208,8 +213,7 @@ div.video > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
-    
-    
+    border-radius: 20px;
 }
 
 aside {
